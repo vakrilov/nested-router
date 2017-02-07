@@ -6,11 +6,11 @@
     <Label text="Dogs TAB"></Label>
 
     <Button text="Navigate to Dogs" 
-      [nsRouterLink]="[{ outlets: { dogoutlet: ['dogs'] } }]">
+      [nsRouterLink]="['/items', { outlets: { dogoutlet: ['dogs'] } }]">
     </Button>
 
     <Button text="Navigate to Dog Details" 
-      [nsRouterLink]="['/', { outlets: { dogoutlet: ['dogdetails'] } }]">
+      [nsRouterLink]="['/items',  { outlets: { dogoutlet: ['dogdetails'] } }]">
     </Button>
 
     <Button text="Navigate to Dogs 2" 
@@ -26,11 +26,11 @@
     <Label text="Cats TAB"></Label>
     
     <Button text="Navigate to Cats" 
-      [nsRouterLink]="[{ outlets: { catoutlet: ['cats'] } }]">
+      [nsRouterLink]="['/items',{ outlets: { catoutlet: ['cats'] } }]">
     </Button>
 
     <Button text="Navigate to Dog Cats" 
-      [nsRouterLink]="['/', { outlets: { catoutlet: ['cats', 1] } }]">
+      [nsRouterLink]="['/items', { outlets: { catoutlet: ['cats', 1] } }]">
     </Button>
     
     <router-outlet name="catoutlet"></router-outlet>  

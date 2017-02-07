@@ -19,10 +19,10 @@ export class HomeComponent implements OnInit{
 
   navigateToDogs() {
     debugger;
-    this.router.navigate([{ outlets: { dogoutlet: ['dogs'] } }]);
+    this.router.navigate(['/items', { outlets: { dogoutlet: ['dogs'] } }]);
   }
   navigateToDogDetails() {
     debugger;
-    this.router.navigate(['/', { outlets: { dogoutlet: ['dogdetails'] } }]);
+    this.router.navigate(['/items', { outlets: { dogoutlet: ['dogdetails'] } }]);
   }
 }
