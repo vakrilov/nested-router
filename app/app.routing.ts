@@ -13,7 +13,7 @@ const routes: Routes = [
     {
         path: "items", component: HomeComponent,  children: [
             { path: 'dogs', component: DogsComponent, outlet: 'dogoutlet' },
-            { path: 'dogdetails', component: DogDetailsComponent, outlet: 'dogoutlet' },
+            { path: 'dogs:/:id', component: DogDetailsComponent, outlet: 'dogoutlet' },
             { path: 'cats', component: CatsComponent, outlet: 'catoutlet' },
             { path: 'cats/:id', component: CatDetailsComponent, outlet: 'catoutlet' }
         ]
